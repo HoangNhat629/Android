@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSizeNumber">32dp</dimen>
+    <dimen name="textSizeOpetator">35dp</dimen>
+    <dimen name="textSizeAdd">46dp</dimen>
+    <dimen name="marginNumber">16dp</dimen>
+</resources>

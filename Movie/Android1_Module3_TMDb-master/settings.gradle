@@ -1,0 +1,2 @@
+rootProject.name='Android1_Module3_TMDb'
+include ':app'

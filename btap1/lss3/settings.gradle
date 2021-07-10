@@ -1,0 +1,2 @@
+rootProject.name='lss3'
+include ':app'

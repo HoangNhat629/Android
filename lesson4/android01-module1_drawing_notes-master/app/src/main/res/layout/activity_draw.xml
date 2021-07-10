@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".DrawActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B8B8B8">
+
+        <ImageView
+            android:id="@+id/iv_color_picker"
+            android:padding="@dimen/space_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_color_lens_black_24dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_pen_size"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rb_pen_size_thin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thin"/>
+
+            <RadioButton
+                android:id="@+id/rb_pen_size_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"/>
+
+            <RadioButton
+                android:id="@+id/rb_pen_size_strong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strong"/>
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/iv_save"
+            android:padding="@dimen/space_large"
+            android:src="@drawable/ic_done_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <com.example.module1_drawingnotes.DrawingView
+        android:id="@+id/drawing_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

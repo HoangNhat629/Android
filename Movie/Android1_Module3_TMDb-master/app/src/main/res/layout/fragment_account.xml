@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AccountFragment"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:id="@+id/ll_sign_in"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/space_default">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please sign in to use this feature"
+            android:textColor="@color/colorTextPrimary" />
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_default"
+            android:hint="Username"
+            android:paddingHorizontal="@dimen/space_default"
+            android:paddingVertical="@dimen/space_medium"
+            android:textColor="@color/colorTextPrimary"
+            android:background="@drawable/custom_sign_in_field"
+            android:textColorHint="#CCFFFFFF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_medium"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="@dimen/space_default"
+            android:background="@drawable/custom_sign_in_field"
+            android:paddingVertical="@dimen/space_medium"
+            android:textColor="@color/colorTextPrimary"
+            android:textColorHint="#CCFFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_default"
+            android:paddingHorizontal="@dimen/space_default"
+            android:paddingVertical="@dimen/space_medium"
+            android:background="@drawable/custom_accent_button"
+            android:text="Sign in" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_account"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/space_default">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to TMDb"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_sign_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign out"
+            android:background="@drawable/custom_accent_button"
+            android:paddingVertical="@dimen/space_medium"
+            android:paddingHorizontal="@dimen/space_default"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            style="@style/SpinKitView.FadingCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:SpinKit_Color="@color/colorAccent" />
+    </LinearLayout>
+
+</RelativeLayout>

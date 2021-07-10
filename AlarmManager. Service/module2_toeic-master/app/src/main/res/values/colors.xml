@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#663344</color>
+    <color name="colorPrimary">#966474</color>
+    <color name="textWhite">#ffffff</color>
+    <color name="textBlack">#000000</color>
+    <color name="textTransparent">#B3FFFFFF</color>
+    <color name="colorAccent">#6c3346</color>
+    <color name="colorPbNew">#6EBFBFBF</color>
+    <color name="colorPbReview">#47966474</color>
+    <color name="colorPbMaster">#966474</color>
+</resources>
